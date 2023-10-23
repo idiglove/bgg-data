@@ -6,7 +6,7 @@ db = client["aintboard"]  # Replace "your_db_name" with the name of your databas
 
 # Access the collections
 mechanics_collection = db["mechanics"]
-boardgame_collection = db["test_bgg"]
+boardgame_collection = db["bg"]
 
 # Initialize an empty list to hold the mappings
 mappings = []

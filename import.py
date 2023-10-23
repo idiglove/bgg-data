@@ -8,7 +8,7 @@ df = pd.read_csv(url, delimiter=';')
 # Connect to MongoDB
 client = MongoClient("mongodb://localhost:27017/")
 db = client["aintboard"]  # replace "your_db_name" with the name of your database
-collection = db["test_bgg"]  # replace "your_collection_name" with the name of your collection
+collection = db["bg"]  # replace "your_collection_name" with the name of your collection
 
 # Convert the DataFrame to a list of dictionaries and insert them into the MongoDB collection
 records = df.to_dict(orient="records")
